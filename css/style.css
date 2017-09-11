@@ -1,0 +1,97 @@
+/*header*/
+.header-log-reg{
+	background-color: black;
+}
+
+/*header button*/
+.header-log-reg > button{
+	color: white;
+}
+
+.header-log-reg > button:hover{
+	text-decoration: underline;
+	color: white;
+}
+
+.header-log-reg > button:focus{
+	color: white;
+}
+
+.modal-button button{
+	float: right;
+	border-radius: 5px;
+}
+
+header img[alt*="logo"]{
+	width: 30%;
+}
+
+.header-image{
+	width: 100%;
+}
+
+
+.navbar{
+	border-radius: 0;
+	background-image: none;
+	background-color: black;
+	text-align: center;
+}
+
+/* USING BOOTSTRAP 3.0.3 */
+nav {
+  .navbar-brand {font-size: 30px;}
+	.navbar-toggle {margin: 13px 15px 13px 0;}
+	a {
+		font-size: 18px;
+		padding-bottom: 20px !important;
+		padding-top: 20px !important;
+    	transition: all 0.3s ease;
+	}
+}
+
+nav.navbar.shrink {
+
+	min-height: 35px;
+
+	.navbar-brand {font-size: 25px;}
+
+ 	a {
+    font-size: 15px;
+    padding-bottom: 10px !important;
+    padding-top: 10px !important;
+  	}
+
+	.navbar-toggle {
+    margin: 8px 15px 8px 0;
+    padding: 4px 5px;
+  }
+}
+
+
+.posts .posts-image{
+	width: 9%;
+}
+.posts .posts-image img{
+	float: left;
+	height: 100%;
+	width: 100%;
+	margin-right : 10px; 
+}
+
+footer{
+	background-color: black;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	color: rgba(255,255,255,0.7);
+}
+
+iframe{
+	width: 100%;
+}
+.clear:after{
+	content: "";
+	display: block;
+	clear: both;
+}
