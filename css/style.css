@@ -1,19 +1,19 @@
 /*header*/
-.header-log-reg{
+.log-reg{
 	background-color: black;
 }
 
 /*header button*/
-.header-log-reg > button{
+.log-reg > button{
 	color: white;
 }
 
-.header-log-reg > button:hover{
+.log-reg > button:hover{
 	text-decoration: underline;
 	color: white;
 }
 
-.header-log-reg > button:focus{
+.log-reg > button:focus{
 	color: white;
 }
 
@@ -30,44 +30,16 @@ header img[alt*="logo"]{
 	width: 100%;
 }
 
+.header-image img[alt*="Place"]{
+	width: 100%;
+	margin-bottom: 10px;
+}
+
 
 .navbar{
 	border-radius: 0;
-	background-image: none;
-	background-color: black;
-	text-align: center;
+	margin: 0;
 }
-
-/* USING BOOTSTRAP 3.0.3 */
-nav {
-  .navbar-brand {font-size: 30px;}
-	.navbar-toggle {margin: 13px 15px 13px 0;}
-	a {
-		font-size: 18px;
-		padding-bottom: 20px !important;
-		padding-top: 20px !important;
-    	transition: all 0.3s ease;
-	}
-}
-
-nav.navbar.shrink {
-
-	min-height: 35px;
-
-	.navbar-brand {font-size: 25px;}
-
- 	a {
-    font-size: 15px;
-    padding-bottom: 10px !important;
-    padding-top: 10px !important;
-  	}
-
-	.navbar-toggle {
-    margin: 8px 15px 8px 0;
-    padding: 4px 5px;
-  }
-}
-
 
 .posts .posts-image{
 	width: 9%;
