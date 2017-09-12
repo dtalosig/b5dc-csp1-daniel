@@ -8,7 +8,7 @@
 	<!-- mobile friendly -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-	<title>CSS Bootstrap Template</title>
+	<title>Don't Adopt Shop</title>
 
 	<!-- bootstrap css -->
 	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
@@ -41,7 +41,7 @@
 			<div class="modal-content">
 		  		<div class="modal-header">
 		    		<button type="button" class="close" data-dismiss="modal">&times;</button>
-		    		<h4 class="modal-title">Log-in | Register</h4>
+		    		<h4 class="modal-title">Log in | Register</h4>
 		  		</div> <!--/.modal header-->
 
 		  		<div class="modal-body  clear">
@@ -54,8 +54,8 @@
 		    		<br>
 
 		    		<div class="modal-button">
-		        		<button class="btn-primary login">Log-In</button>
-		        		<button class="btn-link register">Register</button>
+		        		<button class="btn-primary login"><a href="index-admin.html">Log in</a></button>
+		        		<button class="btn-link register"><a href="register.html">Register</a></button>
 		        		<button class="btn-link forgot">Forgot password?</button>
 		    		</div> <!--/.modal button-->
 		  		</div> <!--/.modal body-->
@@ -85,7 +85,7 @@
 
 					<div class="navbar navbar-inverse navbar-static-top">
 						<div class="container">
-							<a href="#" class="navbar-brand navbar-header">AdoptDon'tShop</a>
+							<a href="index.html" class="navbar-brand navbar-header">AdoptDon'tShop</a>
 
 							<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
 								<span class="icon-bar"></span>
@@ -95,33 +95,63 @@
 
 							<div class="collapse navbar-collapse navHeaderCollapse">
 								<ul class="nav navbar-nav">
-									<li><a href="#">Home</a></li>
+									<li><a href="index.html">Home</a></li>
 									<li class="dropdown">
-										<a href="#" class="dropdown-toggle" data-toggle="dropdown">About</a>
+										<a href="about.html" class="dropdown-toggle" data-toggle="dropdown">About</a>
 										<ul class="dropdown-menu">
-											<li><a href="">About</a></li>
-											<li><a href="">History</a></li>
-											<li><a href="">Mission</a></li>
-											<li><a href="">Vision</a></li>
+											<li><a href="about.html">About</a></li>
+											<li><a href="about-history.html">History</a></li>
+											<li><a href="about-mission.html">Mission</a></li>
+											<li><a href="about-vision.html">Vision</a></li>
 										</ul>
 									</li>
-									<li><a href="#">Contact</a></li>
-									<li><a href="#">Adopt</a></li>
+									<li><a href="contact.html">Contact</a></li>
+									<li><a href="adopt.html">Adopt</a></li>
 								</ul>
 							</div>
 						</div>
 					</div>
 
-				<div class="header-image">
-				<img class="img-responsive header-image" src="./img/dog1.jpg" alt="Placeholder image">
-				</div>  <!--Header image-->
+					<div id="myCarousel" class="carousel slide" data-ride="carousel">
+					  <!-- Indicators -->
+					  <ol class="carousel-indicators">
+					    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+					    <li data-target="#myCarousel" data-slide-to="1"></li>
+					    <li data-target="#myCarousel" data-slide-to="2"></li>
+					  </ol>
+
+					  <!-- Wrapper for slides -->
+					  <div class="carousel-inner">
+					    <div class="item active">
+					      <img src="./img/dog1.jpg" alt="dog">
+					    </div>
+
+					    <div class="item">
+					      <img src="./img/dog2.jpg" alt="dog">
+					    </div>
+
+					    <div class="item">
+					      <img src="./img/dog3.jpg" alt="dog">
+					    </div>
+					  </div>
+
+					  <!-- Left and right controls -->
+					  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+					    <span class="glyphicon glyphicon-chevron-left"></span>
+					    <span class="sr-only">Previous</span>
+					  </a>
+					  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+					    <span class="glyphicon glyphicon-chevron-right"></span>
+					    <span class="sr-only">Next</span>
+					  </a>
+					</div>
 
 
 				<div class="container-fluid">
 					<div class="row">
 						<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
 							<figure class="margin-b-2">
-								<img class="img-responsive" src="http://placehold.it/900x400" alt="Placeholder image">
+								<img class="img-responsive" src="./img/dog-index.jpg" alt="Placeholder image">
 								<figcaption>A Placeholder Image</figcaption>
 								<label>label</label>
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -136,7 +166,7 @@
 
 							<div class="posts">
 							    <div class="posts-image">
-							    	<img src="./img/dog.png">
+							    	<img src="./img/dog-index1.jpg">
 							 	</div>   
 
 							 	<div class="posts-content">
@@ -155,7 +185,7 @@
 
 							<div class="posts clear">
 							    <div class="posts-image">
-							    	<img src="./img/dog.png">
+							    	<img src="./img/dog-index2.jpg">
 							 	</div>   
 
 							 	<div class="posts-content">
@@ -174,7 +204,7 @@
 
 							<div class="posts">
 							    <div class="posts-image">
-							    	<img src="./img/dog.png">
+							    	<img src="./img/dog-index3.jpg">
 							 	</div>   
 
 							 	<div class="posts-content">
@@ -193,7 +223,7 @@
 
 							<div class="posts">
 							    <div class="posts-image">
-							    	<img src="./img/dog.png">
+							    	<img src="../img/dog-index4.jpg">
 							 	</div>   
 
 							 	<div class="posts-content">
