@@ -41,6 +41,10 @@ header img[alt*="logo"]{
 	margin: 0;
 }
 
+#myCarousel{
+	margin-bottom: 20px;
+}
+
 .posts .posts-image{
 	width: 9%;
 }
