@@ -88,6 +88,7 @@ span[class*="date"]{
 margin-right: 5px;
 }
 
+
 .fa-stack:hover{
 color: black;
 }
@@ -112,6 +113,16 @@ color: red
 	font-weight: bold;
 }
 
+#myCarousel{
+	position: relative;
+}
+
+.modify-btn{
+	position: absolute;
+	left: 50%;
+	bottom:0;
+	transform: translateX(-50%);
+}
 .clear:after{
 	content: "";
 	display: block;
