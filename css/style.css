@@ -46,8 +46,9 @@ header img[alt*="logo"]{
 }
 
 .posts .posts-image{
-	width: 9%;
+	width:40%;
 }
+
 .posts .posts-image img{
 	float: left;
 	height: 100%;
@@ -55,6 +56,9 @@ header img[alt*="logo"]{
 	margin-right : 10px; 
 }
 
+.news-image img[alt*="news"]{
+	width: 100%;
+}
 
 footer{
 	background-color: black;
