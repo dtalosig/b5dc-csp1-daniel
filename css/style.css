@@ -80,6 +80,10 @@ iframe{
 	width: 100%;
 }
 
+span[class*="date"]{
+	font-weight: bold;
+	color: #9d9d9d;
+}
 .social-icons > .fa{
 margin-right: 5px;
 }
