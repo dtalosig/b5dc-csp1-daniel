@@ -72,9 +72,42 @@ footer{
 	color: rgba(255,255,255,0.7);
 }
 
+textarea{
+	width: 100%;
+	min-height: 100px;
+}
 iframe{
 	width: 100%;
 }
+
+.social-icons > .fa{
+margin-right: 5px;
+}
+
+.fa-stack:hover{
+color: black;
+}
+.fa-stack i:hover{
+color: white;
+cursor: pointer;
+}
+.fa-stack i before:hover{
+color: red
+}
+
+.form-group > .btn-primary > a{
+	color: white;
+}
+
+.log-reg > .btn-link > a{
+	color: white;
+}
+
+.posts-content > a{
+	color: black;
+	font-weight: bold;
+}
+
 .clear:after{
 	content: "";
 	display: block;
