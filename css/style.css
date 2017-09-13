@@ -60,6 +60,10 @@ header img[alt*="logo"]{
 	width: 100%;
 }
 
+.modal-body > .modal-button > .login > a{
+	color: white;
+}
+
 footer{
 	background-color: black;
 	height: 50px;
