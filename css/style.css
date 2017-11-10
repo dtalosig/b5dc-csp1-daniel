@@ -1,3 +1,7 @@
+body{
+	min-width: 310px;
+}
+
 /*header*/
 .log-reg{
 	background-color: black;
@@ -130,6 +134,14 @@ color: red
 .seperator{
 	height: 100px;
 }
+
+/************************register form************************/
+.form-container{
+	width: 50%;
+	min-width: 280px;
+	margin: 10px auto;
+}
+
 .clear:after{
 	content: "";
 	display: block;
