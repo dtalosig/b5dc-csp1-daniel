@@ -153,6 +153,10 @@ img[alt*="news"]{
 	height: 150px;
 }
 
+.index-text{
+	max-height: 50px !important;
+}
+
 .disable-media-left{
 	display: inline;
 }
