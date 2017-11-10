@@ -154,7 +154,7 @@ img[alt*="news"]{
 }
 
 .index-text{
-	max-height: 50px !important;
+	height: 150px !important;
 }
 
 .disable-media-left{
