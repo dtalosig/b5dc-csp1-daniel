@@ -42,7 +42,7 @@
 						<div class="row">
 							<div class="col-lg-5 col-md-5 col-sm-7 col-xs-7 col-lg-offset-5 col-md-offset-5 col-sm-offset-4 col-xs-offset-4">									
 								<div class="header-logo">
-									<img src="./img/logo.png" alt="logo">
+									<a href="index-admin.html"><img src="./img/logo.png" alt="logo"></a>
 								</div> <!--/.header logo-->
 							</div> <!--/.col-lg-5-->
 						</div> <!--/.row-->
@@ -61,15 +61,8 @@
 						</div><!--/. navbar header-->
 						<div class="collapse navbar-collapse navHeaderCollapse">
 							<ul class="nav navbar-nav">
-								<li class="active"><a href="index-admin.html">Home</a></li>
-								<li class="dropdown">
-									<a href="#" class="dropdown-toggle" data-toggle="dropdown">About</a>
-									<ul class="dropdown-menu">
-										<li><a href="about-admin.html">About</a></li>
-										<li><a href="about-mission-admin.html">Mission</a></li>
-										<li><a href="about-vision-admin.html">Vision</a></li>
-									</ul>
-								</li> <!--/. about dropdown-->
+								<li><a href="index-admin.html">Home</a></li>
+								<li><a href="about-admin.html">About</a></li>
 								<li><a href="contact-admin.html">Contact</a></li>
 								<li class="dropdown">
 									<a href="adopt-why-admin.html" class="dropdown-toggle" data-toggle="dropdown">Adopt</a>
@@ -117,9 +110,9 @@
 					    <span class="glyphicon glyphicon-chevron-right"></span>
 					    <span class="sr-only">Next</span>
 					  </a>
-					  <div class="modify-btn">
-						<button class="btn-default"><span class="fa fa-pencil"></span> Edit</button>
-						<button class="btn-danger"><span class="fa fa-trash"></span> Delete</button>
+					  <div class="modify-btn btn">
+						<button class="btn btn-primary"><span class="fa fa-pencil"></span> Edit</button>
+						<button class="btn btn-danger"><span class="fa fa-trash"></span> Delete</button>
 					</div>
 					</div>
 
@@ -131,25 +124,25 @@
 								<form>
 									<h3>Add article :</h3>
 									<i class="fa fa-photo fa-5x"></i>
-									<button class="btn-default">Choose file</button>
+									<input type="file" name=""><br>
 								
 									<div class="form-group">
-										<label>Title:</label>
-										<input type="text" class="form-control" placeholder="Enter the title">
+										<label for="title-index2-admin">Title:</label>
+										<input id="title-index2-admin" type="text" class="form-control" placeholder="Enter the title">
 									</div>
 
 									<div class="form-group">
-										<label>Date:</label>
-										<input type="date" class="form-control">
+										<label for="date-index2-admin">Date:</label>
+										<input id="date-index2-admin" type="date" class="form-control">
 									</div>
 
 									<div class="form-group">
-										<label>Email:</label>
-										<textarea class="form-control" placeholder="Enter the content"></textarea>
+										<label for="content-index2-admin">Content:</label>
+										<textarea id="content-index2-admin" class="form-control" placeholder="Enter the content"></textarea>
 									</div>
 
-									<button class="btn-default"><span class="fa fa-remove"></span> Cancel</button>
-									<button class="btn-primary"><span class="fa fa-floppy-o"></span> Save</button>
+									<button class="btn btn-success"><span class="fa fa-floppy-o"></span> Save</button>
+									<button type="reset" class="btn btn-default"><span class="fa fa-remove"></span> Reset</button>
 								</form>
 							</div>	<!--/. well-->
 							<figure class="margin-b-2">
@@ -163,16 +156,16 @@
 								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-								<button class="btn-default"><span class="fa fa-pencil"></span> Edit</button>
-								<button class="btn-danger"><span class="fa fa-trash"></span> Delete</button>
+								<button class="btn btn-primary"><span class="fa fa-pencil"></span> Edit</button>
+								<button class="btn btn-danger"><span class="fa fa-trash"></span> Delete</button>
 							</figure>
 						<hr>
 						</div> 	<!--/. col-lg-8-->
 
 
-						<div class="col-lg-4 col-md-4 col-sm-4  col-xs-9">
+						<div class="col-lg-4 col-md-4 col-sm-4 hidden-xs">
 							<div class="panel panel-info">
-							  <div class="panel-heading">ALERT !</div>
+							  <div class="panel-heading letter-spacing">ALERT</div>
 							  <div class="panel-body">
 								  <div class="posts">
 									  <a href="#">
@@ -183,8 +176,8 @@
 									 	<div class="posts-content">
 										    <h4 class="media-heading">336 pets fixed at the PAWS Annual Spay Day 2017</h4>
 										    <p>3/29/2017</p>
-										    <button class="btn-default"><span class="fa fa-pencil"></span> Edit</button>
-											<button class="btn-danger"><span class="fa fa-trash"></span> Delete</button>
+										    <button class="btn btn-primary"><span class="fa fa-pencil"></span> Edit</button>
+											<button class="btn btn-danger"><span class="fa fa-trash"></span> Delete</button>
 										</div> 	<!--/. post content-->
 									</a>
 								 </div><!--/.posts-->
@@ -196,81 +189,93 @@
 					<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
 
 							<div class="posts">
-							    <div class="posts-image">
-							    	<a href="index-admin.html"><img src="./img/dog-index.jpg"></a>
-							 	</div>   
-
-							 	<div class="posts-content">
-								    <a href="index-admin.html"><h4 class="media-heading">75 Dogs Saved</h4></a>
-								    <span class="date">September, 13, 2017</span>
-								    <p>This incredible story of a regular woman doing something extraordinary will make your day and restore your faith in humanity.</p>
-								<p>Cher Herrera is 38 and is a customer service representative who works from her home in Bacolod City in the Philippines. She lives in a modest 86 square meter house (about 925 square feet) with her brother, as well as her two nieces and nephew, whom she cares for. Herrera is also an avid dog lover, and has two rescue Golden Retrievers, Echo and Faith.</p>
-								<button class="btn-default"><span class="fa fa-pencil"></span> Edit</button>
-								<button class="btn-danger"><span class="fa fa-trash"></span> Delete</button>
-								</div>	<!--/. post content-->
-							 </div><!--/.posts-->
-
-							<hr>
-
-							<div class="posts clear">
-							    <div class="posts-image">
-							    	<a href="index-dog1-admin.html"><img src="./img/dog-index1.jpg"></a>
-							 	</div>   
-
-							 	<div class="posts-content">
-								    <a href="index-dog1-admin.html"><h4 class="media-heading">Lorem</h4></a>
-								    <span class="date">September, 13, 2017</span>
-								    <p>Ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-								    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-								    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-								    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-								    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-								    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-								    <button class="btn-default"><span class="fa fa-pencil"></span> Edit</button>
-									<button class="btn-danger"><span class="fa fa-trash"></span> Delete</button>
-								</div>	<!--/. post content-->
+								  <div class="media">
+									<div class="media-left">
+									  <a href="index-admin.html"><img src="./img/dog-index.jpg"  class="media-object index-img"></a>
+									</div>
+									<div class="media-body">
+										<div class="index-text">
+										    <a href="index-admin.html"><h4 class="media-heading">75 Dogs Saved</h4></a>
+										    <span class="date">September, 13, 2017</span>
+										    <p>This incredible story of a regular woman doing something extraordinary will make your day and restore your faith in humanity.</p>
+											<p>Cher Herrera is 38 and is a customer service representative who works from her home in Bacolod City in the Philippines. She lives in a modest 86 square meter house (about 925 square feet) with her brother, as well as her two nieces and nephew, whom she cares for. Herrera is also an avid dog lover, and has two rescue Golden Retrievers, Echo and Faith.</p>
+										</div>	<!--/. index-text-->
+									</div>	<!--/. medi body-->
+								<button class="btn btn-primary"><span class="fa fa-pencil"></span> Edit</button>
+								<button class="btn btn-danger"><span class="fa fa-trash"></span> Delete</button>
+								</div>	<!--/. media-->
 							 </div><!--/.posts-->
 
 							<hr>
 
 							<div class="posts">
-							    <div class="posts-image">
-							    	<a href="index-dog3-admin.html"><img src="./img/dog-index3.jpg"></a>
-							 	</div>   
-
-							 	<div class="posts-content">
-								    <a href="index-dog3-admin.html"><h4 class="media-heading">Lorem</h4></a>
-								    <span class="date">September, 13, 2017</span>
-								    <p>Ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-								    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-								    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-								    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-								    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-								    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-								    <button class="btn-default"><span class="fa fa-pencil"></span> Edit</button>
-									<button class="btn-danger"><span class="fa fa-trash"></span> Delete</button>
-								</div>	<!--/. post content-->
+								  <div class="media">
+									<div class="media-left">
+									  <a href="index-dog1-admin.html"><img src="./img/dog-index1.jpg"  class="media-object index-img"></a>
+									</div>
+									<div class="media-body">
+										<div class="index-text">
+										    <a href="index-dog1-admin.html"><h4 class="media-heading">75 Dogs Saved</h4></a>
+										    <span class="date">September, 13, 2017</span>
+										    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+										    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+										    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+										    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+										    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+										    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+										</div>	<!--/. index-text-->
+									</div>	<!--/. medi body-->
+								<button class="btn btn-primary"><span class="fa fa-pencil"></span> Edit</button>
+								<button class="btn btn-danger"><span class="fa fa-trash"></span> Delete</button>
+								</div>	<!--/. media-->
 							 </div><!--/.posts-->
 
 							<hr>
 
 							<div class="posts">
-							    <div class="posts-image">
-							    	<a href="index-dog4-admin.html"><img src="./img/dog-index4.jpg"></a>
-							 	</div>   
+								  <div class="media">
+									<div class="media-left">
+									  <a href="index-dog3-admin.html"><img src="./img/dog-index3.jpg"  class="media-object index-img"></a>
+									</div>
+									<div class="media-body">
+										<div class="index-text">
+										    <a href="index-dog3-admin.html"><h4 class="media-heading">75 Dogs Saved</h4></a>
+										    <span class="date">September, 13, 2017</span>
+										    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+										    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+										    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+										    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+										    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+										    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+										</div>	<!--/. index-text-->
+									</div>	<!--/. medi body-->
+								<button class="btn btn-primary"><span class="fa fa-pencil"></span> Edit</button>
+								<button class="btn btn-danger"><span class="fa fa-trash"></span> Delete</button>
+								</div>	<!--/. media-->
+							 </div><!--/.posts-->
 
-							 	<div class="posts-content">
-								    <a href="index-dog4-admin.html"><h4 class="media-heading">Lorem</h4></a>
-								    <span class="date">September, 13, 2017</span>
-								    <p>Ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-								    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-								    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-								    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-								    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-								    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-								    <button class="btn-default"><span class="fa fa-pencil"></span> Edit</button>
-									<button class="btn-danger"><span class="fa fa-trash"></span> Delete</button>
-								</div>	<!--/. post content-->
+							<hr>
+
+							<div class="posts">
+								  <div class="media">
+									<div class="media-left">
+									  <a href="index-dog4-admin.html"><img src="./img/dog-index4.jpg"  class="media-object index-img"></a>
+									</div>
+									<div class="media-body">
+										<div class="index-text">
+										    <a href="index-dog4-admin.html"><h4 class="media-heading">75 Dogs Saved</h4></a>
+										    <span class="date">September, 13, 2017</span>
+										    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+										    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+										    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+										    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+										    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+										    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+										</div>	<!--/. index-text-->
+									</div>	<!--/. medi body-->
+								<button class="btn btn-primary"><span class="fa fa-pencil"></span> Edit</button>
+								<button class="btn btn-danger"><span class="fa fa-trash"></span> Delete</button>
+								</div>	<!--/. media-->
 							 </div><!--/.posts-->
 
 							<hr>
@@ -300,6 +305,9 @@
 
 <!-- Latest compiled and minified JavaScript -->
 <script src="./js/bootstrap.js"></script>
+
+<!-- javascript-->
+<script src="./js/javascript.js"></script>
 
 </body>
 </html>
