@@ -3,12 +3,12 @@
 
 			if(width < 500){
 				$("div").find(".media-left").addClass("disable-media-left")
-			location.reload()
 			}
 
 			else{
 				$("div").find(".media-left").removeClass("disable-media-left")	
 			}
+			location.reload()
 			
 		})
 
