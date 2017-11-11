@@ -91,6 +91,12 @@ span[class*="date"]{
 	font-weight: bold;
 	color: #9d9d9d;
 }
+
+/*******************icon*******************/
+.icon-container{
+	margin: 10px 0;
+}
+
 .social-icons > .fa{
 margin-right: 5px;
 }
@@ -164,6 +170,7 @@ img[alt*="news"]{
 .seperator{
 	height: 100px;
 }
+
 
 .clear:after{
 	content: "";
