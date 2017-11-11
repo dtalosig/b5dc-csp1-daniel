@@ -171,6 +171,13 @@ img[alt*="news"]{
 	height: 100px;
 }
 
+.seperator2{
+	height: 200px;
+}
+
+.seperator3{
+	height: 300px;
+}
 
 .clear:after{
 	content: "";
